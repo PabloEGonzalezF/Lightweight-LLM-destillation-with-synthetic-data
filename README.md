@@ -13,3 +13,6 @@ Technique: SFT (Supervised Fine-Tuning) on synthetic responses.
 
 The following image shows how the distillation process transforms a model that initially fails to follow complex instructions into one capable of reasoning with a clear structure:
 
+<p align="center">
+  <img src="img/img_1.png" alt="metric_3">
+</p>
