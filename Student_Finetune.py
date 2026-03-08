@@ -1,5 +1,3 @@
-# @title Student_finetune.py
-
 #!pip install datasets
 #!pip install trl
 #!pip install unsloth
@@ -125,11 +123,10 @@ if __name__ == "__main__":
         args       = sft_config,
     )
 
-    print("Starting fine-tuning...")
-    torch.cuda.empty_cache()
+    print("Starting fine-tuning")
     trainer.train()
-    torch.cuda.empty_cache()
 
     model.save_pretrained(OUTPUT_DIR)
     tokenizer.save_pretrained(OUTPUT_DIR)
+
     print(f"\nStudent LoRA adapter saved to {OUTPUT_DIR}")
