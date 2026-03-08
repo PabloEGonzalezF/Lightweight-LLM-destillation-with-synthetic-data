@@ -1,7 +1,6 @@
 
 #For using qwen 3.5 use: pip install git+https://github.com/huggingface/transformers.git
 
-# Load model directly
 from transformers import AutoProcessor, AutoModelForImageTextToText
 import torch
 import json
@@ -81,3 +80,4 @@ if __name__ == "__main__":
 
 
     print(f"All responses saved to {OUTPUT_FILE}")
+
