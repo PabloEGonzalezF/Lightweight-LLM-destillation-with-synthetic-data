@@ -74,10 +74,10 @@ if __name__ == "__main__":
             "response": response,
         })
 
-        torch.cuda.empty_cache()
         print(f"Done\n")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
+
 
     print(f"All responses saved to {OUTPUT_FILE}")
